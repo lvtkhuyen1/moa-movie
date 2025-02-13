@@ -18,8 +18,6 @@ export default function Content({ selectedCategory }: any) {
       {isHome ? (
         <>
           <Slider />
-          {/* <Advertisement /> */}
-          {/* <HeaderCard /> */}
           <ListCategory />
         </>
       ) : (

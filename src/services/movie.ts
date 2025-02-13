@@ -12,7 +12,7 @@ export const handleFetchMovies = async (
     categoryId: categoryId.toString(),
   }).toString();
   const res = await customFetch(`/movies?${query}`, {
-    method: 'GET',
+    method: "GET",
   });
   return res as FetchMoviesResponse;
 };
@@ -21,7 +21,7 @@ export const handleFetchMovieByID = async (
   id: string
 ): Promise<FetchMovieDetailResponse> => {
   const res = await customFetch(`/movies/${id}`, {
-    method: 'GET',
+    method: "GET",
   });
   return res as FetchMovieDetailResponse;
 };

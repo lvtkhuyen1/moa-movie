@@ -1,15 +1,27 @@
 export interface MovieType {
-  id: string;
-  title_id?: number;
-  title: string;
-  des: string;
+  actor: string;
+  actor_images: ActorType[];
+  author: string | null;
   cate_id: number;
+  categories: CategoryType[];
+  episodes: EpisodeType[];
+  genre: string | null;
   image: string;
+  number_ep: string;
+  video_episode: number;
+  des: string;
+  title: string;
+}
+
+interface ActorType {
+  [actor: string]: string;
 }
 
 export interface CategoryType {
   id: number;
-  name: string;
+  title: string;
+  subTitle: string;
+  image: string;
 }
 export interface EpisodeType {
   id: string;
